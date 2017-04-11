@@ -2,10 +2,9 @@ language: cpp
 compiler: g++
 
 install:
-  - sudo apt-get install -qq 
-                          g++ \
-                          cmake \
-                          make
+  - sudo apt-get install g++ \
+                          cmake \ 
+                          make 
 
 script:
   - mkdir build && cd build && cmake ..
