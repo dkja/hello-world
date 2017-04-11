@@ -10,3 +10,6 @@ script:
   - mkdir build && cd build && cmake ..
   - make
   - ./hello_proj
+
+dist: xenial
+os: linux
