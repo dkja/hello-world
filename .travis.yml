@@ -1,0 +1,13 @@
+language: cpp
+compiler: g++
+
+install:
+  - sudo apt-get install -qq 
+                          g++ \
+                          cmake \
+                          make
+
+script:
+  - mkdir build && cd build && cmake ..
+  - make
+  - ./hello_proj
